@@ -1,0 +1,1623 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
+	<title>FERNANDA : Coordinadora de Eventos</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/jcarousel.css" />
+	<link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">
+	<link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+	
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+	<script src="js/jquery.isotope.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/sorting.js"></script>
+	<script type="text/javascript" src="js/jquery.jcarousel.js"></script>
+	<script type="text/javascript" src="js/js.js"></script>
+	<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+	<script type="text/javascript" src="js/waypoints.min.js"></script>
+    <script src="js/jTabs.js"></script> 
+	<script>
+    $(document).ready(function(){
+        $("ul.tabs").jTabs({content: ".tabs_content", animate: true});                       
+    });
+    </script>
+	
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<script src="js/respond.src.js"></script>
+	<![endif]-->
+	
+	<script type="text/javascript">
+		$(document).ready(function(){	
+			$("#ajax-contact-form").submit(function() {
+				var str = $(this).serialize();		
+				$.ajax({
+					type: "POST",
+					url: "contact_form/contact_process.php",
+					data: str,
+					success: function(msg) {
+						// Message Sent - Show the 'Thank You' message and hide the form
+						if(msg == 'OK') {
+							result = '<div class="notification_ok">Your message has been sent. Thank you!</div>';
+							$("#fields").hide();
+						} else {
+							result = msg;
+						}
+						$('#note').html(result);
+					}
+				});
+				return false;
+			});
+		});		
+	</script>
+	
+</head>
+
+<body>
+
+<div class="menu">	
+	<div class="container clearfix">
+
+		<div id="logo" class="fleft">
+			<a href="#"><img src="images/logo.png"></a>
+		</div>
+		
+		<div id="nav" class="fright">
+			<ul class="navigation">
+				<li data-slide="1">Top</li>
+				<li data-slide="2">Sobre mí</li>
+				<li data-slide="6">Servicios</li>
+				<li data-slide="4">Portafolio</li>
+				<li data-slide="12">Contacto</li>
+				<!--<div class="clear"></div> -->
+                <a href="https://www.facebook.com/pages/Fernanda-Coordinadora-de-Eventos/516594341733376" class="fbLink" target="_new"></a>
+            	<a href="https://twitter.com/ferCoordinadora" class="twLink" target="_new"></a>
+			</ul>
+		</div>
+	
+	</div>
+</div>
+
+
+<div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
+	<div class="effect_2 padding_slide1">
+		<div class="container clearfix">
+			<div id="content" class="grid_12">
+				<img src="images/logoFer.png" />
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
+	<div class="container clearfix">
+		
+		<div id="content" class="grid_12">
+			<h3><span>SOBRE MI</span></h3>
+		</div>
+		<div class="clear"></div>
+		
+		<div id="content">
+			<div class="grid_6">
+				<h4>Biografía</h4>
+				<p><strong>Tengo 10 años de experiencia en la organización de eventos, corporativos y privados.</strong></p>
+				<p>He trabajado para empresas transnacionales, coordinando congresos, convenciones, eventos de fin de año, además de bodas, todo tipo de eventos sociales tanto en el DF como en el resto de la Republica. Abarcando la logística de todo el evento, contacto con los mejores proveedores, manejo de presupuestos y pagos.</p><br>
+                <p><span style="color:#5c5c5c;">Fernanda Garcia</span><br><i style="font-size:12px;">Coordinadora de Eventos</i></p>
+			</div>
+			<div class="grid_6 omega">
+				<h4>Información personal</h4>
+				<ul class="pers_inf">
+					<li style="height:80px;"><span>Dirección</span>Revillagigedo 18 Depto 910, Colonia Centro, CP. 06050, México DF</li>
+					<li><span>Correo</span><a href="mailto:fernanda@coordinadoradeeventos.com">fernanda@coordinadoradeeventos.com</a></li>
+					<li><span>Teléfono</span><a href="tel:0445510685535">04455 10685535</a></li>
+					<li><span>Página Web</span><a href="http://www.coordinadoradeeventos.com">www.coordinadoradeeventos.com</a></li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+			
+		</div>
+		
+	</div>
+</div>
+
+
+
+<div class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0.5">
+	<div class="effect_2 padding_slide3">
+		<div class="container clearfix">
+		
+			<div id="content" class="grid_12">
+				<p>10 años de experiencia en la organización de eventos, corporativos y privados.</p>
+<!--				<span>Nullam vel tellus id diam accumsan congue ut non elit.</span>
+				<span>Cras massa ligula, tempor sed eleifend eget, rutrum quis nulla. Class aptent taciti sociosqu ad litora</span> -->
+			</div>
+		
+		</div>
+	</div>
+</div>
+
+
+<div class="slide" id="slide6" data-slide="6" data-stellar-background-ratio="0.5">
+	<div class="container clearfix">
+		
+		<div id="content" class="grid_12">
+			<h3><span>servicios</span></h3>
+			<h4>Nullam luctus lacus in massa feugiat venenatis. Morbi a lorem mauris. Nam egestas ligula dignissim justo ullamcorper viverra.</h4>
+		</div>
+		<div class="clear"></div>
+		<div id="content">
+			<div class="grid_6">
+				<div class="servc_block">
+					<!--<div class="icon1"></div> -->
+					<p>Eventos Sociales</p>
+					<div class="clear"></div>
+					<br>Como:
+                    <ul style="color:#93DBDA;font-weight:bold;">
+                    	<li>Bodas</li>
+                        <li>Bautizos</li>
+                        <li>Primera Comunión</li>
+                        <li>XV años</li>
+                        <li>Despedidas de Soltera</li>
+                        <li>Baby shower</li>
+                    </ul>
+				</div>
+			</div>
+			<div class="grid_6 omega">
+				<div class="servc_block2">
+					<!--<div class="icon2"></div> -->
+					<p style="color:#FFF;">Eventos Corporativos</p>
+					<div class="clear"></div>
+					<br>Como:
+                    <ul style="font-weight:bold;">
+                    	<li>Cenas de Fin de Año</li>
+                        <li>Congresos</li>
+                        <li>Convenciones</li>
+                        <li>Eventos privados</li>
+                        <li>&nbsp;</li>
+                        <li>&nbsp;</li>
+                    </ul>
+				</div>
+			</div>
+        </div>
+		<div class="clear"></div>
+	
+	</div>
+</div>
+
+
+
+<div class="slide" id="slide5" data-slide="5" data-stellar-background-ratio="0.5">
+	<div class="effect_2 padding_slide5">
+		<div class="container clearfix">
+		
+			<div id="content" class="grid_12">
+				<p>Abarcando la logística de todo el evento, contacto con los mejores proveedores, manejo de presupuestos y pagos.</p>
+			</div>
+		
+		</div>
+	</div>
+</div>
+
+
+
+<div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0.5">
+	<div class="container clearfix">
+		
+		<div id="content" class="grid_12">
+			<h3><span>Portafolio</span></h3>
+		</div>
+		<div class="clear"></div>
+		<div id="content">
+        
+        <div class="wrap">
+            <ul class="tabs">  
+                <li class="active"><a href="#">EVENTOS SOCIALES</a></li>
+                <li><a href="#">EVENTOS EMPRESARIALES</a></li>
+            </ul>  
+            <div class="clear"></div>
+            <div class="tabs_content">
+                <div>
+                    <div id="options" style="text-align:center;">
+                        <ul id="filters" class="option-set" data-option-key="filter">
+                            <li><a href="#filter" data-option-value=".category01">Bodas</a></li>
+                            <li><a href="#filter" data-option-value=".category02">Bautizo</a></li>
+                            <li><a href="#filter" data-option-value=".category03">1a. Comunión</a></li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="gallery-list">
+                    <!-- portfolio_block -->
+                    <div class="projects">     
+                    
+                    
+                    
+                    
+                                                 
+                        <div class="grid_3 element category01" data-category="category01">
+                            <div class="hover_img">
+                                <img src="images/portfolio/47.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/47.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category01" data-category="category01">
+                            <div class="hover_img">
+                                <img src="images/portfolio/48.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/48.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category01" data-category="category01">
+                            <div class="hover_img">
+                                <img src="images/portfolio/49.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/49.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category01" data-category="category01">
+                            <div class="hover_img">
+                                <img src="images/portfolio/50.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/50.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category01" data-category="category01">
+                            <div class="hover_img">
+                                <img src="images/portfolio/51.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/51.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category01" data-category="category01">
+                            <div class="hover_img">
+                                <img src="images/portfolio/52.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/52.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category01" data-category="category01">
+                            <div class="hover_img">
+                                <img src="images/portfolio/53.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/53.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category01" data-category="category01">
+                            <div class="hover_img">
+                                <img src="images/portfolio/54.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/54.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category01" data-category="category01">
+                            <div class="hover_img">
+                                <img src="images/portfolio/55.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/55.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category01" data-category="category01">
+                            <div class="hover_img">
+                                <img src="images/portfolio/57.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/57.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category01" data-category="category01">
+                            <div class="hover_img">
+                                <img src="images/portfolio/59.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/59.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category01" data-category="category01">
+                            <div class="hover_img">
+                                <img src="images/portfolio/60.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/60.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category01" data-category="category01">
+                            <div class="hover_img">
+                                <img src="images/portfolio/61.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/61.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category01" data-category="category01">
+                            <div class="hover_img">
+                                <img src="images/portfolio/62.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/62.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category01" data-category="category01">
+                            <div class="hover_img">
+                                <img src="images/portfolio/64.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/64.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category01" data-category="category01">
+                            <div class="hover_img">
+                                <img src="images/portfolio/65.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/65.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category01" data-category="category01">
+                            <div class="hover_img">
+                                <img src="images/portfolio/66.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/66.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category01" data-category="category01">
+                            <div class="hover_img">
+                                <img src="images/portfolio/71.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/71.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category01" data-category="category01">
+                            <div class="hover_img">
+                                <img src="images/portfolio/72.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/72.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category01" data-category="category01">
+                            <div class="hover_img">
+                                <img src="images/portfolio/73.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/73.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category01" data-category="category01">
+                            <div class="hover_img">
+                                <img src="images/portfolio/74.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/74.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category01" data-category="category01">
+                            <div class="hover_img">
+                                <img src="images/portfolio/75.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/75.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category01" data-category="category01">
+                            <div class="hover_img">
+                                <img src="images/portfolio/76.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/76.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category01" data-category="category01">
+                            <div class="hover_img">
+                                <img src="images/portfolio/77.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/77.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category01" data-category="category01">
+                            <div class="hover_img">
+                                <img src="images/portfolio/78.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/78.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category01" data-category="category01">
+                            <div class="hover_img">
+                                <img src="images/portfolio/80.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/80.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category01" data-category="category01">
+                            <div class="hover_img">
+                                <img src="images/portfolio/81.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/81.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category01" data-category="category01">
+                            <div class="hover_img">
+                                <img src="images/portfolio/8.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/8.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category01" data-category="category01">
+                            <div class="hover_img">
+                                <img src="images/portfolio/83.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/83.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category01" data-category="category01">
+                            <div class="hover_img">
+                                <img src="images/portfolio/85.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/85.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category01" data-category="category01">
+                            <div class="hover_img">
+                                <img src="images/portfolio/86.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/86.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category01" data-category="category01">
+                            <div class="hover_img">
+                                <img src="images/portfolio/87.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/87.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category01" data-category="category01">
+                            <div class="hover_img">
+                                <img src="images/portfolio/90.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/90.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category01" data-category="category01">
+                            <div class="hover_img">
+                                <img src="images/portfolio/91.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/91.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category01" data-category="category01">
+                            <div class="hover_img">
+                                <img src="images/portfolio/92.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/92.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category01" data-category="category01">
+                            <div class="hover_img">
+                                <img src="images/portfolio/95.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/95.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category01" data-category="category01">
+                            <div class="hover_img">
+                                <img src="images/portfolio/96.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/96.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category01" data-category="category01">
+                            <div class="hover_img">
+                                <img src="images/portfolio/97.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/97.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category01" data-category="category01">
+                            <div class="hover_img">
+                                <img src="images/portfolio/98.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/98.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category01" data-category="category01">
+                            <div class="hover_img">
+                                <img src="images/portfolio/100.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/100.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category01" data-category="category01">
+                            <div class="hover_img">
+                                <img src="images/portfolio/100.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/100.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category01" data-category="category01">
+                            <div class="hover_img">
+                                <img src="images/portfolio/106.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/106.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category01" data-category="category01">
+                            <div class="hover_img">
+                                <img src="images/portfolio/107.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/107.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category01" data-category="category01">
+                            <div class="hover_img">
+                                <img src="images/portfolio/108.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/108.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category01" data-category="category01">
+                            <div class="hover_img">
+                                <img src="images/portfolio/109.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/109.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category01" data-category="category01">
+                            <div class="hover_img">
+                                <img src="images/portfolio/114.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/114.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category01" data-category="category01">
+                            <div class="hover_img">
+                                <img src="images/portfolio/115.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/115.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category01" data-category="category01">
+                            <div class="hover_img">
+                                <img src="images/portfolio/116.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/116.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category01" data-category="category01">
+                            <div class="hover_img">
+                                <img src="images/portfolio/118.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/118.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category01" data-category="category01">
+                            <div class="hover_img">
+                                <img src="images/portfolio/121.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/121.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category01" data-category="category01">
+                            <div class="hover_img">
+                                <img src="images/portfolio/122.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/122.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category01" data-category="category01">
+                            <div class="hover_img">
+                                <img src="images/portfolio/123.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/123.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category02" data-category="category02">
+                            <div class="hover_img">
+                                <img src="images/portfolio/158.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/158.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category02" data-category="category02">
+                            <div class="hover_img">
+                                <img src="images/portfolio/160.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/160.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category02" data-category="category02">
+                            <div class="hover_img">
+                                <img src="images/portfolio/161.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/161.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category02" data-category="category02">
+                            <div class="hover_img">
+                                <img src="images/portfolio/162.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/162.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category02" data-category="category02">
+                            <div class="hover_img">
+                                <img src="images/portfolio/163.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/163.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category02" data-category="category02">
+                            <div class="hover_img">
+                                <img src="images/portfolio/164.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/164.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category02" data-category="category02">
+                            <div class="hover_img">
+                                <img src="images/portfolio/165.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/165.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category02" data-category="category02">
+                            <div class="hover_img">
+                                <img src="images/portfolio/166.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/166.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+    
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category02" data-category="category02">
+                            <div class="hover_img">
+                                <img src="images/portfolio/167.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/167.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category02" data-category="category02">
+                            <div class="hover_img">
+                                <img src="images/portfolio/168.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/168.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category06" data-category="category06">
+                            <div class="hover_img">
+                                <img src="images/portfolio/169.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/169.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category03" data-category="category03">
+                            <div class="hover_img">
+                                <img src="images/portfolio/170.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/170.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category03" data-category="category03">
+                            <div class="hover_img">
+                                <img src="images/portfolio/171.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/171.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category03" data-category="category03">
+                            <div class="hover_img">
+                                <img src="images/portfolio/172.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/172.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category03" data-category="category03">
+                            <div class="hover_img">
+                                <img src="images/portfolio/173.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/173.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category03" data-category="category03">
+                            <div class="hover_img">
+                                <img src="images/portfolio/174.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/174.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category03" data-category="category03">
+                            <div class="hover_img">
+                                <img src="images/portfolio/175.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/175.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category03" data-category="category03">
+                            <div class="hover_img">
+                                <img src="images/portfolio/177.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/177.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>   
+                    <!-- //portfolio_block -->   
+                </div>
+                </div>
+                
+                <div>
+                	<div id="options" style="text-align:center;">
+                        <ul id="filters" class="option-set" data-option-key="filter">
+                            <li><a href="#filter" data-option-value=".category04">Eventos empresariales</a></li>
+                            <li><a href="#filter" data-option-value=".category05">Fiestas de fin de año</a></li>
+                            <li><a href="#filter" data-option-value=".category06">Arreglos y detalles</a></li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="gallery-list">
+                    <!-- portfolio_block -->
+                    <div class="projects"> 
+                    
+                    
+                                                     
+                    	<div class="grid_3 element category04" data-category="category04">
+                            <div class="hover_img">
+                                <img src="images/portfolio/1.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/1.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category06" data-category="category06">
+                            <div class="hover_img">
+                                <img src="images/portfolio/2.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/2.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category06" data-category="category06">
+                            <div class="hover_img">
+                                <img src="images/portfolio/3.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/3.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category04" data-category="category04">
+                            <div class="hover_img">
+                                <img src="images/portfolio/4.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/4.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category06" data-category="category06">
+                            <div class="hover_img">
+                                <img src="images/portfolio/5.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/5.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category04" data-category="category04">
+                            <div class="hover_img">
+                                <img src="images/portfolio/6.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/6.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category04" data-category="category04">
+                            <div class="hover_img">
+                                <img src="images/portfolio/7.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/7.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category04" data-category="category04">
+                            <div class="hover_img">
+                                <img src="images/portfolio/8.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/8.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category04" data-category="category04">
+                            <div class="hover_img">
+                                <img src="images/portfolio/9.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/9.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category06" data-category="category06">
+                            <div class="hover_img">
+                                <img src="images/portfolio/10.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/10.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category04" data-category="category04">
+                            <div class="hover_img">
+                                <img src="images/portfolio/11.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/11.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+    
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category04" data-category="category04">
+                            <div class="hover_img">
+                                <img src="images/portfolio/12.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/12.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category04" data-category="category04">
+                            <div class="hover_img">
+                                <img src="images/portfolio/13.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/13.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category04" data-category="category04">
+                            <div class="hover_img">
+                                <img src="images/portfolio/14.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/14.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category06" data-category="category06">
+                            <div class="hover_img">
+                                <img src="images/portfolio/15.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/15.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category06" data-category="category06">
+                            <div class="hover_img">
+                                <img src="images/portfolio/16.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/16.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category04" data-category="category04">
+                            <div class="hover_img">
+                                <img src="images/portfolio/17.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/17.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category06" data-category="category06">
+                            <div class="hover_img">
+                                <img src="images/portfolio/18.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/18.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category06" data-category="category06">
+                            <div class="hover_img">
+                                <img src="images/portfolio/19.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/19.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category04" data-category="category04">
+                            <div class="hover_img">
+                                <img src="images/portfolio/20.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/20.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category04" data-category="category04">
+                            <div class="hover_img">
+                                <img src="images/portfolio/21.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/21.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category04" data-category="category04">
+                            <div class="hover_img">
+                                <img src="images/portfolio/22.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/22.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category04" data-category="category04">
+                            <div class="hover_img">
+                                <img src="images/portfolio/23.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/23.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category04" data-category="category04">
+                            <div class="hover_img">
+                                <img src="images/portfolio/24.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/24.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category06" data-category="category06">
+                            <div class="hover_img">
+                                <img src="images/portfolio/25.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/25.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category04" data-category="category04">
+                            <div class="hover_img">
+                                <img src="images/portfolio/26.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/26.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category06" data-category="category06">
+                            <div class="hover_img">
+                                <img src="images/portfolio/27.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/27.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category04" data-category="category04">
+                            <div class="hover_img">
+                                <img src="images/portfolio/28.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/28.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category06" data-category="category06">
+                            <div class="hover_img">
+                                <img src="images/portfolio/29.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/29.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category04" data-category="category04">
+                            <div class="hover_img">
+                                <img src="images/portfolio/30.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/30.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category04" data-category="category04">
+                            <div class="hover_img">
+                                <img src="images/portfolio/31.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/31.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category04" data-category="category04">
+                            <div class="hover_img">
+                                <img src="images/portfolio/32.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/32.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category04" data-category="category04">
+                            <div class="hover_img">
+                                <img src="images/portfolio/33.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/33.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category04" data-category="category04">
+                            <div class="hover_img">
+                                <img src="images/portfolio/34.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/34.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category04" data-category="category04">
+                            <div class="hover_img">
+                                <img src="images/portfolio/35.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/35.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category04" data-category="category04">
+                            <div class="hover_img">
+                                <img src="images/portfolio/36.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/36.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category04" data-category="category04">
+                            <div class="hover_img">
+                                <img src="images/portfolio/37.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/37.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category04" data-category="category04">
+                            <div class="hover_img">
+                                <img src="images/portfolio/38.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/38.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category04" data-category="category04">
+                            <div class="hover_img">
+                                <img src="images/portfolio/39.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/39.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category06" data-category="category06">
+                            <div class="hover_img">
+                                <img src="images/portfolio/40.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/40.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category04" data-category="category04">
+                            <div class="hover_img">
+                                <img src="images/portfolio/41.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/41.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category04" data-category="category04">
+                            <div class="hover_img">
+                                <img src="images/portfolio/42.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/42.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category04" data-category="category04">
+                            <div class="hover_img">
+                                <img src="images/portfolio/43.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/43.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category04" data-category="category04">
+                            <div class="hover_img">
+                                <img src="images/portfolio/44.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/44.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category04" data-category="category04">
+                            <div class="hover_img">
+                                <img src="images/portfolio/45.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/45.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category04" data-category="category04">
+                            <div class="hover_img">
+                                <img src="images/portfolio/46.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/46.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category06" data-category="category06">
+                            <div class="hover_img">
+                                <img src="images/portfolio/56.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/56.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category06" data-category="category06">
+                            <div class="hover_img">
+                                <img src="images/portfolio/58.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/58.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category06" data-category="category06">
+                            <div class="hover_img">
+                                <img src="images/portfolio/63.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/63.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category01" data-category="category01">
+                            <div class="hover_img">
+                                <img src="images/portfolio/64.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/64.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category06" data-category="category06">
+                            <div class="hover_img">
+                                <img src="images/portfolio/67.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/67.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category06" data-category="category06">
+                            <div class="hover_img">
+                                <img src="images/portfolio/68.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/68.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category06" data-category="category06">
+                            <div class="hover_img">
+                                <img src="images/portfolio/69.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/69.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category06" data-category="category06">
+                            <div class="hover_img">
+                                <img src="images/portfolio/70.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/70.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category06" data-category="category06">
+                            <div class="hover_img">
+                                <img src="images/portfolio/79.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/79.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category06" data-category="category06">
+                            <div class="hover_img">
+                                <img src="images/portfolio/82.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/82.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category06" data-category="category06">
+                            <div class="hover_img">
+                                <img src="images/portfolio/84.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/84.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category06" data-category="category06">
+                            <div class="hover_img">
+                                <img src="images/portfolio/88.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/88.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category06" data-category="category06">
+                            <div class="hover_img">
+                                <img src="images/portfolio/89.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/89.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category06" data-category="category06">
+                            <div class="hover_img">
+                                <img src="images/portfolio/93.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/93.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category06" data-category="category06">
+                            <div class="hover_img">
+                                <img src="images/portfolio/94.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/94.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category06" data-category="category06">
+                            <div class="hover_img">
+                                <img src="images/portfolio/99.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/99.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category06" data-category="category06">
+                            <div class="hover_img">
+                                <img src="images/portfolio/101.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/101.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category06" data-category="category06">
+                            <div class="hover_img">
+                                <img src="images/portfolio/102.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/102.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category06" data-category="category06">
+                            <div class="hover_img">
+                                <img src="images/portfolio/103.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/103.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category06" data-category="category06">
+                            <div class="hover_img">
+                                <img src="images/portfolio/104.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/104.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category06" data-category="category06">
+                            <div class="hover_img">
+                                <img src="images/portfolio/105.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/105.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category06" data-category="category06">
+                            <div class="hover_img">
+                                <img src="images/portfolio/110.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/110.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category06" data-category="category06">
+                            <div class="hover_img">
+                                <img src="images/portfolio/111.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/111.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category06" data-category="category06">
+                            <div class="hover_img">
+                                <img src="images/portfolio/112.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/112.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category06" data-category="category06">
+                            <div class="hover_img">
+                                <img src="images/portfolio/113.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/113.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category06" data-category="category06">
+                            <div class="hover_img">
+                                <img src="images/portfolio/117.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/117.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category06" data-category="category06">
+                            <div class="hover_img">
+                                <img src="images/portfolio/119.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/119.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category06" data-category="category06">
+                            <div class="hover_img">
+                                <img src="images/portfolio/120.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/120.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category06" data-category="category06">
+                            <div class="hover_img">
+                                <img src="images/portfolio/124.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/124.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category06" data-category="category06">
+                            <div class="hover_img">
+                                <img src="images/portfolio/125.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/125.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category06" data-category="category06">
+                            <div class="hover_img">
+                                <img src="images/portfolio/126.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/126.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category06" data-category="category06">
+                            <div class="hover_img">
+                                <img src="images/portfolio/127.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/127.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category05" data-category="category05">
+                            <div class="hover_img">
+                                <img src="images/portfolio/128.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/128.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category05" data-category="category05">
+                            <div class="hover_img">
+                                <img src="images/portfolio/129.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/129.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category05" data-category="category05">
+                            <div class="hover_img">
+                                <img src="images/portfolio/130.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/130.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category05" data-category="category05">
+                            <div class="hover_img">
+                                <img src="images/portfolio/131.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/131.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category05" data-category="category05">
+                            <div class="hover_img">
+                                <img src="images/portfolio/131.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/131.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category05" data-category="category05">
+                            <div class="hover_img">
+                                <img src="images/portfolio/132.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/132.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category05" data-category="category05">
+                            <div class="hover_img">
+                                <img src="images/portfolio/133.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/133.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category05" data-category="category05">
+                            <div class="hover_img">
+                                <img src="images/portfolio/134.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/134.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category05" data-category="category05">
+                            <div class="hover_img">
+                                <img src="images/portfolio/135.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/135.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category05" data-category="category05">
+                            <div class="hover_img">
+                                <img src="images/portfolio/136.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/136.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category05" data-category="category05">
+                            <div class="hover_img">
+                                <img src="images/portfolio/137.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/137.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category05" data-category="category05">
+                            <div class="hover_img">
+                                <img src="images/portfolio/138.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/138.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category05" data-category="category05">
+                            <div class="hover_img">
+                                <img src="images/portfolio/139.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/139.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category05" data-category="category05">
+                            <div class="hover_img">
+                                <img src="images/portfolio/140.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/140.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category05" data-category="category05">
+                            <div class="hover_img">
+                                <img src="images/portfolio/141.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/141.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category05" data-category="category05">
+                            <div class="hover_img">
+                                <img src="images/portfolio/142.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/142.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category05" data-category="category05">
+                            <div class="hover_img">
+                                <img src="images/portfolio/143.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/143.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category05" data-category="category05">
+                            <div class="hover_img">
+                                <img src="images/portfolio/144.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/144.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category05" data-category="category05">
+                            <div class="hover_img">
+                                <img src="images/portfolio/145.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/145.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category05" data-category="category05">
+                            <div class="hover_img">
+                                <img src="images/portfolio/146.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/146.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category05" data-category="category05">
+                            <div class="hover_img">
+                                <img src="images/portfolio/147.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/147.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category05" data-category="category05">
+                            <div class="hover_img">
+                                <img src="images/portfolio/148.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/148.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category05" data-category="category05">
+                            <div class="hover_img">
+                                <img src="images/portfolio/149.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/149.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category05" data-category="category05">
+                            <div class="hover_img">
+                                <img src="images/portfolio/150.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/150.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category05" data-category="category05">
+                            <div class="hover_img">
+                                <img src="images/portfolio/151.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/151.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category05" data-category="category05">
+                            <div class="hover_img">
+                                <img src="images/portfolio/152.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/152.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category05" data-category="category05">
+                            <div class="hover_img">
+                                <img src="images/portfolio/153.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/153.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category05" data-category="category05">
+                            <div class="hover_img">
+                                <img src="images/portfolio/154.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/154.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category05" data-category="category05">
+                            <div class="hover_img">
+                                <img src="images/portfolio/155.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/155.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category05" data-category="category05">
+                            <div class="hover_img">
+                                <img src="images/portfolio/156.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/156.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category05" data-category="category05">
+                            <div class="hover_img">
+                                <img src="images/portfolio/157.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/157.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category06" data-category="category06">
+                            <div class="hover_img">
+                                <img src="images/portfolio/159.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/159.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category06" data-category="category06">
+                            <div class="hover_img">
+                                <img src="images/portfolio/169.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/169.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category06" data-category="category06">
+                            <div class="hover_img">
+                                <img src="images/portfolio/176.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/176.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category03" data-category="category03">
+                            <div class="hover_img">
+                                <img src="images/portfolio/177.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/177.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                        <div class="grid_3 element category06" data-category="category06">
+                            <div class="hover_img">
+                                <img src="images/portfolio/178.jpg" alt="" />
+                                <span class="portfolio_zoom"><a href="images/portfolio/full/178.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                                <span class="portfolio_link"><a href="#">View item</a></span>
+                            </div> 
+                        </div>
+                    
+                    
+                    
+                    
+                    
+                        
+                        
+                     </div>   
+                            <!-- //portfolio_block -->   
+                        </div>
+                        <div class="clear"></div>
+                </div>
+            </div><!-- tabs content -->
+        </div><!-- wrap -->
+        
+		</div>
+	
+	</div>
+</div>
+
+
+
+<div class="slide" id="slide12" data-slide="12" data-stellar-background-ratio="0.5">
+	<div class="container clearfix">
+		<div id="content" class="grid_12">
+			<h3><span class="contacto">Contacto</span></h3>
+		</div>
+		<div class="clear"></div>
+		
+		<div class="grid_12">
+			<div class="contact_form">  
+				<div id="note"></div>
+				<div id="fields">
+					<form id="ajax-contact-form" action="">
+						<div class="grid_6"><span style="color:#FFF;">Nombre:</span><input type="text" name="name" value="" placeholder="Name" /></div>
+						<!-- <input type="text" name="subject" value="" placeholder="Phone" /> -->
+						<div class="grid_6 omega"><span style="color:#FFF;">Email:</span><input type="text" name="email" value="" placeholder="Email" /></div>
+						
+						<div class="clear"></div>
+						
+						<div class="grid_12"><span style="color:#FFF;">Mensaje:</span><textarea name="message" id="message" placeholder="Message"></textarea></div>
+						<div class="clear"></div>
+						<input type="reset" class="contact_btn" value="Borrar" />
+						<input type="submit" class="contact_btn send_btn" value="Enviar" />
+						<div class="clear"></div>
+					</form>
+				</div>
+			</div>
+		</div>		
+		<div class="clear"></div>
+
+	</div>
+
+
+<div id="footer">
+	<div class="container clearfix">
+		<div class="copyright">studio 27 &copy; 2020 | <a href="#">Privacy Policy</a></div>
+		<div id="back_top"><a class="button" title="" data-slide="1">back to top</a></div>
+	</div>
+</div>
+
+
+</body>
+</html>

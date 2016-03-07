@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualLightBox>
+    <Gallery version="2.5">
+        <Settings>
+            <AppName>WOW Slider</AppName>
+            <AppUrlS>WOWSlider.com</AppUrlS>
+            <AppVersion>7.7</AppVersion>
+            <AutoPlay>true</AutoPlay>
+            <AutoPlayVideo>false</AutoPlayVideo>
+            <Captions>false</Captions>
+            <CaptionsEffect>parallax</CaptionsEffect>
+            <Controls>false</Controls>
+            <FontSize>24</FontSize>
+            <FullScreen>false</FullScreen>
+            <GalleryName>Sociales</GalleryName>
+            <GallerySuffix>1</GallerySuffix>
+            <HtmlCharset>UTF-8</HtmlCharset>
+            <ImageAspectRatio>true</ImageAspectRatio>
+            <ImageEffect></ImageEffect>
+            <ImageFillColor>#000000</ImageFillColor>
+            <ImageHeight>768</ImageHeight>
+            <ImageQuality>90</ImageQuality>
+            <ImageShrink2>true</ImageShrink2>
+            <ImageStretch>true</ImageStretch>
+            <ImageTemplate>C:/Program Files (x86)/WOW Slider/templates/backgnd/bootstrap/</ImageTemplate>
+            <ImageTemplateName>Bootstrap</ImageTemplateName>
+            <ImageWidth>1024</ImageWidth>
+            <Images>true</Images>
+            <JoomlaType>2.5</JoomlaType>
+            <OneLoop>false</OneLoop>
+            <OrderRandom>false</OrderRandom>
+            <PlayPause>false</PlayPause>
+            <Preloader>true</Preloader>
+            <PublishFileName>C:/Users/anapolavarrieta/Documents/WOW Slider/wowslider.html</PublishFileName>
+            <PublishIndex>wowslider.html</PublishIndex>
+            <PublishPath>C:/Users/anapolavarrieta/Documents/WOW Slider</PublishPath>
+            <PublishPreview>true</PublishPreview>
+            <PublishType>file</PublishType>
+            <RelativePath>false</RelativePath>
+            <ShowBullets>0</ShowBullets>
+            <ShowControls>false</ShowControls>
+            <ShowTooltips>1</ShowTooltips>
+            <SizeStyle>2</SizeStyle>
+            <SlideshowDelay>20</SlideshowDelay>
+            <SlideshowDuration>20</SlideshowDuration>
+            <SoundEnable>0</SoundEnable>
+            <SoundFileName></SoundFileName>
+            <StopOnHover>true</StopOnHover>
+            <SwipeSupport>2</SwipeSupport>
+            <TemplateColor>#ffffff</TemplateColor>
+            <TemplateFont>Helvetica Neue</TemplateFont>
+            <TemplateName>bootstrap</TemplateName>
+            <ThumbAlign>bottom</ThumbAlign>
+            <ThumbFormat>jpg</ThumbFormat>
+            <ThumbHeight>48</ThumbHeight>
+            <ThumbQuality>90</ThumbQuality>
+            <ThumbWidth>0</ThumbWidth>
+            <Thumbnails>true</Thumbnails>
+            <TooltipPos>bottom</TooltipPos>
+            <noFrame>1</noFrame>
+        </Settings>
+        <Images RelativePath="false">
+            <Image>
+                <url>C:/Users/anapolavarrieta/Dropbox/Fotos pagina/Foto para portada de sociales/Imagen1.jpeg</url>
+                <title>Imagen1</title>
+                <filesize>150630</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/anapolavarrieta/Dropbox/Fotos pagina/Eventos sociales/Imagen2.jpeg</url>
+                <title>Imagen2</title>
+                <filesize>239561</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/anapolavarrieta/Dropbox/Fotos pagina/Eventos sociales/Imagen3.jpeg</url>
+                <title>Imagen3</title>
+                <filesize>130235</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/anapolavarrieta/Dropbox/Fotos pagina/Eventos sociales/Imagen4.jpeg</url>
+                <title>Imagen4</title>
+                <filesize>130217</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/anapolavarrieta/Dropbox/Fotos pagina/Foto para portada de sociales/Imagen5.jpeg</url>
+                <title>Imagen5</title>
+                <filesize>142417</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/anapolavarrieta/Dropbox/Fotos pagina/Eventos sociales/Imagen6.jpeg</url>
+                <title>Imagen6</title>
+                <filesize>151268</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/anapolavarrieta/Dropbox/Fotos pagina/Eventos sociales/Imagen7.jpeg</url>
+                <title>Imagen7</title>
+                <filesize>160116</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/anapolavarrieta/Dropbox/Fotos pagina/Eventos sociales/Imagen8.jpeg</url>
+                <title>Imagen8</title>
+                <filesize>261947</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/anapolavarrieta/Dropbox/Fotos pagina/Eventos sociales/Imagen9.jpeg</url>
+                <title>Imagen9</title>
+                <filesize>173611</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/anapolavarrieta/Dropbox/Fotos pagina/Eventos sociales/Imagen10.jpeg</url>
+                <title>Imagen10</title>
+                <filesize>128727</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/anapolavarrieta/Dropbox/Fotos pagina/Eventos sociales/Imagen11.jpeg</url>
+                <title>Imagen11</title>
+                <filesize>175371</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/anapolavarrieta/Dropbox/Fotos pagina/Eventos sociales/Imagen12.jpeg</url>
+                <title>Imagen12</title>
+                <filesize>136258</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/anapolavarrieta/Dropbox/Fotos pagina/Eventos sociales/Imagen13.jpeg</url>
+                <title>Imagen13</title>
+                <filesize>245992</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/anapolavarrieta/Dropbox/Fotos pagina/Eventos sociales/Imagen14.jpeg</url>
+                <title>Imagen14</title>
+                <filesize>247988</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/anapolavarrieta/Dropbox/Fotos pagina/Eventos sociales/Imagen15.jpeg</url>
+                <title>Imagen15</title>
+                <filesize>195627</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/anapolavarrieta/Dropbox/Fotos pagina/Eventos sociales/Imagen16.jpeg</url>
+                <title>Imagen16</title>
+                <filesize>158295</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/anapolavarrieta/Dropbox/Fotos pagina/Eventos sociales/Imagen17.jpeg</url>
+                <title>Imagen17</title>
+                <filesize>141306</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/anapolavarrieta/Dropbox/Fotos pagina/Eventos sociales/Imagen18.jpeg</url>
+                <title>Imagen18</title>
+                <filesize>112680</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/anapolavarrieta/Dropbox/Fotos pagina/Eventos sociales/Imagen19.jpeg</url>
+                <title>Imagen19</title>
+                <filesize>166145</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/anapolavarrieta/Dropbox/Fotos pagina/Eventos sociales/Imagen20.jpeg</url>
+                <title>Imagen20</title>
+                <filesize>310903</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/anapolavarrieta/Dropbox/Fotos pagina/Eventos sociales/Imagen21.jpeg</url>
+                <title>Imagen21</title>
+                <filesize>149048</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/anapolavarrieta/Dropbox/Fotos pagina/Eventos sociales/Imagen22.jpeg</url>
+                <title>Imagen22</title>
+                <filesize>142674</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/anapolavarrieta/Dropbox/Fotos pagina/Eventos sociales/Imagen23.jpeg</url>
+                <title>Imagen23</title>
+                <filesize>109862</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/anapolavarrieta/Dropbox/Fotos pagina/Eventos sociales/Imagen24.jpeg</url>
+                <title>Imagen24</title>
+                <filesize>107291</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/anapolavarrieta/Dropbox/Fotos pagina/Eventos sociales/Imagen25.jpeg</url>
+                <title>Imagen25</title>
+                <filesize>121998</filesize>
+            </Image>
+        </Images>
+    </Gallery>
+</VisualLightBox>

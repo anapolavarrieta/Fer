@@ -1,17 +1,51 @@
 /* Global */
 
+
 body {
 	font-family: 'Tahoma', sans-serif;
 	font-weight: 400;
 	font-size: 14px;
 	line-height:20px;
-	color: #7e7e7e;
+	color: white;
 	background-color:#ffffff;
 	overflow-x:hidden;
+	
 }
+
+.container{
+	width:100%;
+	padding-left: 0px;
+	padding-right: 0px;
+
+}
+
+
+
+
+.navbar-default{
+	background-color: transparent;
+	border-color:transparent;
+}
+
+.navbar-default .navbar-brand{
+	padding-left: 15%;
+}
+
+.navbar-toggle {
+	margin-right: 8%;
+	margin-top:5%;
+}
+
 img {
 	max-width: 100%;
+
 }
+
+.footers{
+	color:#93DBDA;
+	font-size: large;
+}
+
 a:link {
 	color: #93DBDA;
 	text-decoration: none;
@@ -20,7 +54,7 @@ a:hover {
 	text-decoration: underline;
 }
 a:visited {
-	color: #f68f67;
+	color: #93DBDA;
 	text-decoration: none;
 }
 
@@ -32,6 +66,13 @@ a:visited {
 
 
 /* Navigation */
+.navbar-fixed-top {
+    top:0px;
+	width:100%;  
+	background-color:#343434;
+}
+
+
 
 .menu {
 	position:fixed;
@@ -39,45 +80,54 @@ a:visited {
 	width:100%; 
 	height:auto; 
 	background-color:#343434;
-	z-index:9999;
 }
-#logo {
-	margin-bottom:0;
+
+.navbar-brand{
+	padding-top: 5px;
 }
+
 #nav {
 	text-align: right;
 	margin: 31px 0 0 0;
 }
-.navigation{
-	float: right;
-	list-style: none;
-	margin: 0;
-}
-ul.navigation {
-	margin:0;
-	padding:0;
-}
-.navigation li{
+
+.nav li{
 	float: left;
 	margin:0;
-	padding:0 18px 0 12px;
+	padding:0 10px 0 0px;
 	text-transform:uppercase;
 	font-family:'Open Sans';
-	font-weight:400;
-	font-size:;
-	color:#a6a6a6;
-	background:url(../images/menu_bord.png) no-repeat right;
+	font-weight:300;
+	font-size:90%;	
 }
+
+.navbar-default .navbar-nav>li>a{
+	color:#a6a6a6;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+	color:#93DBDA;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover, 
+.navbar-default .navbar-nav>.active>a:focus{
+	color:#93DBDA;
+	background-color: #343434;
+}
+
+
 .navigation li:last-child {padding:0 0 0 15px;background:none;}
 .navigation li:hover{
 	cursor:pointer;
 	color: #93DBDA;
 }
 
-.navigation .active{
-	cursor:pointer;
+.nav .active{
+	
 	color: #93DBDA;
-	font-weight:400;
+	font-size: 100%;
+	font-weight: 400;
 }
 
 
@@ -92,24 +142,32 @@ ul.navigation {
 	position: relative;
 	padding:0;
 }
-h3 {
+
+
+
+h1 {
 	margin:0;
 	text-transform:uppercase;
 	text-align:center;
-	background:url(../images/h1_bg.png) repeat-x;
+	/*background:url(../images/h1_bg.png) repeat-x;*/
 	font-family:'Open Sans';
-	font-size: 52px;
+	font-size: xx-large;
 	line-height: 86px;
 	color:#343434;
 	font-weight: 300;
+	
+
 }
-h3 span {
-	background:url(../images/main_bg.jpg) repeat;
-	padding:0 12px;
+h1 span {
+	/*background:url(../images/main_bg.jpg) repeat;*/
+	/*padding:0 12px;*/
+	color: white;
+	font-weight: bold;
 }
 h3 span.contacto {
 	background:url(../images/main_bg_contacto.jpg) repeat;
 	padding:0 12px;
+
 }
 h4 {
 	margin:0 0 21px 0;
@@ -134,20 +192,30 @@ h5 {
 }
 
 
+
+
 /* ____________________________________ Slide 1 ____________________________________ */ 
+
+
+
 .effects {
 	position:relative;
 }
-.padding_slide1 {padding:259px 0 259px 0;
+
+#intro{
+	background-position:center center;
+	background-repeat: no-repeat;
+	background-image: url(../images/logoFer.png);
+	background-size: contain;
+	background-clip: content-box;
+	margin-left:10%;
+	margin-right: 10%;
+	
+
+
 }
 
-#slide1{
-	background-color:#ffffff;
-	text-align:center;
-	background-position:0 0 !important;
-	background-size: cover !important;
-	width:100%;
-}
+
 #slide1 h1 {
 	position:relative;
 	z-index:100;
@@ -222,14 +290,37 @@ a.first_btn:hover {cursor:pointer;
 
 /* ____________________________________ Slide 2 ____________________________________ */ 
 
-#slide2 {
-	background:url(../images/slide6_bg.jpg) repeat left top;
-	width:100%;
-	padding:86px 0 69px;
+.effects {
+	position:relative;
 }
 
+#about {
+	background:url(../images/about.jpg) ;
+	background-position:center center;
+	background-repeat: no-repeat;
+	background-attachment: relative;
+ 	background-size: cover;
+	width:100%;
+
+	background-image:linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url(../images/option4a.jpg);
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+#about p{
+	font-size: 150%;
+
+}
+
+
+
+
+
 /* ________________________ personal_info _________________________ */
-.pers_inf {margin-top:-8px;
+.pers_inf {margin-top:-8px;GO
 }
 .pers_inf li {
 	margin-bottom:2px;
@@ -258,46 +349,38 @@ a.first_btn:hover {cursor:pointer;
 
 /* ___________________________________ //Slide 2 ___________________________________ */ 
 
-/* ____________________________________ Slide 3 ____________________________________ */ 
+/* ____________________________________ Slide 3 and 4____________________________________ */ 
 
-#slide3{
-	background-image:url(../images/slide3_bg.jpg);
-	background-size: cover !important;
+.sociales-section, .coorporativos-section{
+	padding-top: 5%;
+}
+
+
+
+/* ____________________________________ Slide 5 ____________________________________ */
+
+#contratarnos {
+	background:url(../images/about.jpg) ;
+	background-position:center center;
+	background-repeat: no-repeat;
+	background-attachment: relative;
+ 	background-size: cover;
 	width:100%;
-	background-position:0 0 !important;
-	text-align:center;
-	color: #FFF;
+	background-image:linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url(../images/option4a.jpg);
+    padding-top: 1em;
+    padding-bottom: 2em;
 }
-.padding_slide3 {
-	padding:83px 0 78px 0;
-}
-#slide3 p {
-	padding:0 0 29px 0;
-	margin:0;
-	text-transform:uppercase;
-	font-family:'Open Sans';
-	font-size: 56px;
-	line-height: 52px;
-}
-img.icon_bg {margin-bottom:19px;
-}
-#slide3 span {
-	display:block;
-	font-style:italic;
-	font-family:'Open Sans';
-	font-weight:300;
-	font-size:20px;
-	line-height:27px;
+
+#contratarnos ul{
+	font-size: x-large;
+	list-style-type: none;	
 }
 
 
-/* ____________________________________ Slide 4 ____________________________________ */
 
-#slide4{
-	background:url(../images/main_bg.jpg) repeat left top;
-	padding:90px 0 110px;
-}
-#slide4 h4 {margin:0 0 14px;}
 /* _________________ PORTFOLIO ________________ */
 .gallery-list .projects .grid_3 {width:235px !important;}
 
@@ -628,16 +711,18 @@ img.icon_bg {margin-bottom:19px;
 
 /* ____________________________________ Slide 12 ____________________________________ */
 
-#slide12 {
+#contact {
 	background:#93DBDA;
 	background-position:0 0 !important;
 	width:100%;
-	padding:86px 0 0;
+	padding-top: 1em;
+	padding-bottom: 2em;
+	padding-left: 2em;
+	padding-right: 2em;
 }
 
-#slide12 .container {margin-bottom:92px;
-}
-#slide12 p {color:#656565;
+
+#contact p {color:#656565;
 }
 
 
@@ -672,6 +757,13 @@ img.icon_bg {margin-bottom:19px;
 	width:96.8%;
 }
 
+.contact-section{
+	text-align: left;
+}
+
+div .boton{
+	text-align: center;
+}
 .contact_btn {
 	border:none;
 	text-transform:none;

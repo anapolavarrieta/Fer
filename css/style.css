@@ -12,13 +12,76 @@ body {
 	
 }
 
+@media screen and (min-width: 601px) {
 .container{
 	width:100%;
+	height: 100%;
 	padding-left: 0px;
 	padding-right: 0px;
 
+
+
+}
 }
 
+.logo{
+		zoom:80%;
+	}
+
+.nav li{
+	float: left;
+	margin:0;
+	padding:0 10px 0 0px;
+	text-transform:uppercase;
+	font-family:'Open Sans';
+	font-weight:300;
+	font-size:70%;	
+}
+
+@media screen and (min-width: 1100px) {
+	.logo{
+		zoom:100%;
+	}
+
+	.nav li{
+		font-size: 90%;
+	}
+}
+
+
+@media screen and (min-width: 1000px) {
+  .navbar-brand {
+    float: left;
+    margin-right: 5px;
+    margin-left: -15px;
+  }
+  .navbar-nav {
+    float: left;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .navbar-nav > li {
+    float: left;
+  }
+  .navbar-nav > li > a {
+    border-radius: 0;
+  }
+  .navbar-nav.pull-right {
+    float: right;
+    width: auto;
+  }
+  .navbar-toggle {
+    position: relative;
+    top: auto;
+    left: auto;
+    display: none;
+  }
+  .nav-collapse.collapse {
+    display: block !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+}
 
 
 
@@ -36,10 +99,7 @@ body {
 	margin-top:5%;
 }
 
-img {
-	max-width: 100%;
 
-}
 
 .footers{
 	color:#93DBDA;
@@ -91,15 +151,6 @@ a:visited {
 	margin: 31px 0 0 0;
 }
 
-.nav li{
-	float: left;
-	margin:0;
-	padding:0 10px 0 0px;
-	text-transform:uppercase;
-	font-family:'Open Sans';
-	font-weight:300;
-	font-size:90%;	
-}
 
 .navbar-default .navbar-nav>li>a{
 	color:#a6a6a6;
@@ -294,24 +345,70 @@ a.first_btn:hover {cursor:pointer;
 	position:relative;
 }
 
+
+ 
+
+
+
 #about {
-	background:url(../images/about.jpg) ;
 	background-position:center center;
 	background-repeat: no-repeat;
 	background-attachment: relative;
- 	background-size: cover;
-	width:100%;
-
+ 	background-size:cover;
+ 	background-clip: content-box;
 	background-image:linear-gradient(
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
-    ), url(../images/option4a.jpg);
+    ), url(../images/option4.jpg);
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+    
     padding-top: 1em;
     padding-bottom: 2em;
 }
 
+
+
+
+#abouttext{
+	padding:1em;
+}
+
+
+
+
+.background{
+	filter: grayscale(100%);
+}
+
+
 #about p{
-	font-size: 150%;
+	font-size: 120%;
+
+}
+
+@media screen and (min-width: 481px) {
+
+#about {
+	background-position:center center;
+	background-repeat: no-repeat;
+	background-attachment: relative;
+ 	background-size:cover;
+ 	background-clip: content-box;
+	background-image:linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url(../images/option4.jpg);
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+    height: 100%;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+#about p {
+font-size: 150%;
+}
 
 }
 
@@ -360,25 +457,55 @@ a.first_btn:hover {cursor:pointer;
 /* ____________________________________ Slide 5 ____________________________________ */
 
 #contratarnos {
-	background:url(../images/about.jpg) ;
 	background-position:center center;
 	background-repeat: no-repeat;
 	background-attachment: relative;
  	background-size: cover;
-	width:100%;
 	background-image:linear-gradient(
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ), url(../images/option4a.jpg);
+    -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
     padding-top: 1em;
     padding-bottom: 2em;
 }
 
-#contratarnos ul{
-	font-size: x-large;
-	list-style-type: none;	
+@media screen and (max-width: 481px) {
+h1{
+	font-size:150%;
+}
 }
 
+#contratarnos ul{
+	font-size: 120%;
+}
+
+@media screen and (min-width: 481px) {
+
+#contratarnos {
+	background-position:center center;
+	background-repeat: no-repeat;
+	background-attachment: relative;
+ 	background-size:cover;
+ 	background-clip: content-box;
+	background-image:linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url(../images/option4.jpg);
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+    height: 100%;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+
+#contratarnos ul{
+	font-size: 180%;
+	list-style-type: none;	
+}
+}
 
 
 /* _________________ PORTFOLIO ________________ */
@@ -713,14 +840,36 @@ img.icon_bg {margin-bottom:19px;
 
 #contact {
 	background:#93DBDA;
-	background-position:0 0 !important;
-	width:100%;
-	padding-top: 1em;
-	padding-bottom: 2em;
+	background-position:center center;
+	padding-left: 2em;
+	padding-right: 2em;
+
+}
+
+#contact2 {
+	background:#93DBDA;
+	
+	
+}
+
+.dir{
+	font-size: 80%;
+}
+
+@media screen and (min-width: 481px) {
+
+#contact {
+	background:#93DBDA;
+	background-position:center center;
+	height: 100%;
 	padding-left: 2em;
 	padding-right: 2em;
 }
 
+.dir{
+	font-size: 120%;
+}
+}
 
 #contact p {color:#656565;
 }

@@ -74,7 +74,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 
-                	<a class="navbar-brand page-scroll" href="#page-top"><img src="images/logo.png"></a>
+                	<a class="navbar-brand page-scroll" href="#page-top"><img src="images/logo.png" class="logo"></a>
                 
             </div>
 
@@ -119,11 +119,13 @@
     </section>
 
     <!-- About Section -->
+
    <div class="container" id="contrast">
     <section id="about" class="about-section">
-         
+       
 
-            <div class ="row"  >
+            <div class ="row" id="abouttext" >
+               
             	<div class="col-md-2"></div>
             	<div class="col-md-8" >
             		<h1><span>Quienes somos</span></h1>
@@ -138,11 +140,13 @@
                         cada cliente.</p><br>
                 </br>
                     <p id="contrast" >En <span style=" font-weight: 600;"> Fernanda, Coordinadora de eventos</span>, sabemos lo especial que es ese
-                        día, por lo que siempre estamos innovando pr medio de nuestro conocimiento y sensibilidad a cada uno de nuestros clientes.
-                    </p><br>				
+                        día, por lo que siempre estamos innovando por medio de nuestro conocimiento y sensibilidad a cada uno de nuestros clientes.
+                    </p><br>			
             	</div>
             	<div class="col-md-2"></div>
+
             </div>
+        </div>
 
           
 </section>
@@ -235,8 +239,8 @@
     </div>
 
     <!-- Contact Section -->
-     <div class="container">
-        <section id="contact" class="contact-section">
+     <div class="container" id="contact">
+        <section  class="contact-section" id="contact2">
        
             <div class="row">
                 <div class="col-lg-12">
@@ -244,7 +248,7 @@
 
                     <div class="row">
                         <p style="color:#FFF; text-align:center; font-size:large;"> E-mail: hola@fernandagarcia.mx</p> 
-                        <p style="color:#FFF; text-align:center; font-size:large;"> Cel: 55-1068-5535</p> 
+                        <p style="color:#FFF; text-align:center; font-size:large;"> Cel: 044-55-1068-5535</p> 
                     </div>
                 </br>
                     <div class="contact_form"> 

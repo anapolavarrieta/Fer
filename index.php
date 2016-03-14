@@ -8,7 +8,7 @@
     <!-- CSS -->
     <link href="/css/Bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/Bootstrap/css/scrolling-nav.css" rel="stylesheet">
-    <link href="/css/style.css" rel="stylesheet">
+     <link href="/css/style.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
 
     <!-- jQuery  -->
@@ -18,6 +18,7 @@
 	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.12.0/jquery.validate.js"></script>
 	<script src="css/Bootstrap/js/bootstrap.min.js"></script>
 	<script src="js/jTabs.js"></script> 
+
 
 	<!-- Start WOWSlider.com HEAD section -->
 	<link rel="stylesheet" type="text/css" href="/images/engine1/style.css" />
@@ -160,24 +161,58 @@
     <section id="sociales" class="sociales-section">
         
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8" >
 
-                    <!-- Start WOWSlider.com BODY section -->
-                    <div id="wowslider-container1">
-                        <div class="ws_images">
-                            <ul>
-		                      <?php for ($x = 1; $x <= 25; $x++) {?>
-			                     <li><img src="/images/data1/images/sociales/imagen<?php echo $x?>.jpg" alt="Imagen<?php echo $x?>" title="Imagen<?php echo $x?>" id="wows1_0"/></li>
-    	                       <?php }?>
-                            </ul>
-                        </div>
-	
-                        <div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">jquery slideshow</a> by WOWSlider.com v7.7</div>
-                        <div class="ws_shadow"></div>
-                    </div>	
-                    <script type="text/javascript" src="/images/engine1/wowslider.js"></script>
-                    <script type="text/javascript" src="/images/engine1/script.js"></script>
-                    <!-- End WOWSlider.com BODY section -->
+<div id="carousel-example-generic1" class="carousel slide" data-ride="carousel" >
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic1" data-slide-to="0" class="active"></li>
+    <?php for ($x = 2; $x <= 24; $x++) {?>
+        <li data-target="#carousel-example-generic1" data-slide-to="<?php echo $x?>"></li>
+    <?php }?>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox" id="active">
+    <div class="item active" >
+        <img src="/images/data1/images/sociales/imagen1.jpeg">
+       <div class="carousel-content">
+
+            <h1>Eventos Sociales</h1>
+        </br>
+            <p> Estamos contigo en los momentos que vale la pena festejar </p>
+        </br>
+            <p> Sin importar el número de invitados, tu evento para nosotros es el más importante</p>
+        </br>
+            <p> Hacemos todo tipo de eventos (Bodas, bautizos, primeras comuniones, fiestas infantiles, graduaciones, etc)</p>
+        </br>
+            <p> Empezamos trabajando con clientes, terminamos siendo amigos </p>
+      </div>
+    </div>
+   
+     <?php for ($x = 2; $x <= 24; $x++) {?>
+    <div class="item">
+       
+            <img src="/images/data1/images/sociales/imagen<?php echo $x?>.jpeg" alt="...">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+    <?php }?>
+    ...
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic1" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic1" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 
                 </div>
             </div>
@@ -190,24 +225,62 @@
 
         
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8" >
 
-                    <!-- Start WOWSlider.com BODY section -->
-                    <div id="wowslider-container2">
-                        <div class="ws_images">
-                            <ul>
-                              <?php for ($x = 1; $x <= 25; $x++) {?>
-                                 <li><img src="/images/data2/images/imagen<?php echo $x?>.jpg" alt="Imagen<?php echo $x?>" title="Imagen<?php echo $x?>" id="wows1_0"/></li>
-                               <?php }?>
-                            </ul>
-                        </div>
-    
-                      
-                       
-                    </div>  
-                    <script type="text/javascript" src="/images/engine2/wowslider.js"></script>
-                    <script type="text/javascript" src="/images/engine2/script.js"></script>
-                    <!-- End WOWSlider.com BODY section -->
+<div id="carousel-example-generic2" class="carousel slide" data-ride="carousel" >
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic2" data-slide-to="0" class="active"></li>
+    <?php for ($x = 2; $x <= 24; $x++) {?>
+        <li data-target="#carousel-example-generic2" data-slide-to="<?php echo $x?>"></li>
+    <?php }?>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox" id="active">
+    <div class="item active" >
+        <img src="/images/data2/images/imagen1.jpeg">
+       <div class="carousel-content">
+
+            <h1>Eventos Coorporativos</h1>
+        </br>
+            <p> Hemos tenido el honor de trabajar en lugares como: </p>
+        </br>
+            <ul>
+                <li>Instituto Nacional de Bellas Artes </li>
+                <li>Museo de Antropología e Historia</li> 
+                <li>Museo Soumaya</li>
+                <li>Museo Jumex</li>
+                <li>Museo Nacional de Arte (MUNAL)</li>
+                <li>Museo Nacional de San Carlos</li>
+                <li>En varios estados organizando congresos y convenciones</li>
+            </ul>
+      </div>
+    </div>
+   
+     <?php for ($x = 2; $x <= 24; $x++) {?>
+    <div class="item">
+       
+            <img src="/images/data2/images/imagen<?php echo $x?>.jpeg" alt="...">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+    <?php }?>
+    ...
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic2" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic2" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
                 </div>
             </div>
         

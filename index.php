@@ -176,7 +176,7 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox" id="active">
     <div class="item active" >
-        <img src="/images/data1/images/sociales/imagen1.jpeg">
+        <img src="/images/data1/images/sociales/Imagen1.jpeg">
        <div class="carousel-content">
 
             <h1>Eventos Sociales</h1>
@@ -194,7 +194,7 @@
      <?php for ($x = 2; $x <= 24; $x++) {?>
     <div class="item">
        
-            <img src="/images/data1/images/sociales/imagen<?php echo $x?>.jpeg" alt="...">
+            <img src="/images/data1/images/sociales/Imagen<?php echo $x?>.jpeg" alt="...">
       <div class="carousel-caption">
         ...
       </div>

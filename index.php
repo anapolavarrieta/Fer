@@ -20,13 +20,7 @@
 	<script src="js/jTabs.js"></script> 
 
 
-	<!-- Start WOWSlider.com HEAD section -->
-	<link rel="stylesheet" type="text/css" href="/images/engine1/style.css" />
-	<script type="text/javascript" src="/images/engine1/jquery.js"></script>
-    <link rel="stylesheet" type="text/css" href="/images/engine2/style.css" />
-    <script type="text/javascript" src="/images/engine2/jquery.js"></script>
-<!-- End WOWSlider.com HEAD section -->
-
+	
 	<!-- Scrolling Nav JavaScript -->
     <script src="/css/Bootstrap/js/jquery.easing.min.js"></script>
     <script src="/css/Bootstrap/js/scrolling-nav.js"></script>
@@ -160,15 +154,29 @@
     <div class="container">
     <section id="sociales" class="sociales-section">
         
-            <div class="row">
-                <div class="col-lg-2"></div>
-                <div class="col-lg-8" >
+            
+            <div class="row" id="socialestext">
+                
+                <div class="col-md-2" ></div>
+<div class="col-md-8" >
+                <h1><span id="socialeshead">Eventos Sociales</span></h1>
 
-<div id="carousel-example-generic1" class="carousel slide" data-ride="carousel" >
+            <p> Estamos contigo en los momentos que vale la pena festejar </p>
+            <p> Sin importar el número de invitados, tu evento para nosotros es el más importante</p>
+            <p> Hacemos todo tipo de eventos (Bodas, bautizos, primeras comuniones, fiestas infantiles, graduaciones, etc)</p>
+            <p> Empezamos trabajando con clientes, terminamos siendo amigos </p>
+   
+            
+        </div>
+    </div>
+         <div class="row" >
+            <div class="col-md-2" ></div>
+        <div class="col-lg-8" >
+            <div id="carousel-example-generic1" class="carousel slide" data-ride="carousel" >
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#carousel-example-generic1" data-slide-to="0" class="active"></li>
-    <?php for ($x = 2; $x <= 24; $x++) {?>
+    <?php for ($x = 2; $x <= 27; $x++) {?>
         <li data-target="#carousel-example-generic1" data-slide-to="<?php echo $x?>"></li>
     <?php }?>
   </ol>
@@ -176,25 +184,15 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox" id="active">
     <div class="item active" >
-        <img src="/images/data1/images/sociales/Imagen1.jpeg">
-       <div class="carousel-content">
-
-            <h1>Eventos Sociales</h1>
-        </br>
-            <p> Estamos contigo en los momentos que vale la pena festejar </p>
-        </br>
-            <p> Sin importar el número de invitados, tu evento para nosotros es el más importante</p>
-        </br>
-            <p> Hacemos todo tipo de eventos (Bodas, bautizos, primeras comuniones, fiestas infantiles, graduaciones, etc)</p>
-        </br>
-            <p> Empezamos trabajando con clientes, terminamos siendo amigos </p>
-      </div>
-    </div>
+        <img src="/images/Sociales/imagen1.png">
+      
+</div>
+            
    
-     <?php for ($x = 2; $x <= 24; $x++) {?>
+     <?php for ($x = 2; $x <= 27; $x++) {?>
     <div class="item">
        
-            <img src="/images/data1/images/sociales/Imagen<?php echo $x?>.jpeg" alt="...">
+            <img src="/images/Sociales/imagen<?php echo $x?>.png" alt="...">
       <div class="carousel-caption">
         ...
       </div>
@@ -215,6 +213,12 @@
 </div>
 
                 </div>
+        <div class="col-md-2" ></div> 
+      
+      
+    </div>
+
+
             </div>
         
     </section>
@@ -223,30 +227,15 @@
     <div class="container">
     <section id="coorporativos" class="coorporativos-section">
 
-        
-            <div class="row">
-                <div class="col-lg-2"></div>
-                <div class="col-lg-8" >
+        <div class="row" id="socialestext">
+                
+                <div class="col-md-2" ></div>
+<div class="col-md-8" >
+                <h1><span id="socialeshead">Eventos Coorporativos</span></h1>
 
-<div id="carousel-example-generic2" class="carousel slide" data-ride="carousel" >
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic2" data-slide-to="0" class="active"></li>
-    <?php for ($x = 2; $x <= 24; $x++) {?>
-        <li data-target="#carousel-example-generic2" data-slide-to="<?php echo $x?>"></li>
-    <?php }?>
-  </ol>
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox" id="active">
-    <div class="item active" >
-        <img src="/images/data2/images/imagen1.jpeg">
-       <div class="carousel-content">
-
-            <h1>Eventos Coorporativos</h1>
         </br>
             <p> Hemos tenido el honor de trabajar en lugares como: </p>
-        </br>
             <ul>
                 <li>Instituto Nacional de Bellas Artes </li>
                 <li>Museo de Antropología e Historia</li> 
@@ -256,13 +245,36 @@
                 <li>Museo Nacional de San Carlos</li>
                 <li>En varios estados organizando congresos y convenciones</li>
             </ul>
-      </div>
+
+            
+   
+            
+        </div>
+    </div>
+            <div class="row">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8" >
+
+<div id="carousel-example-generic2" class="carousel slide" data-ride="carousel" >
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic2" data-slide-to="0" class="active"></li>
+    <?php for ($x = 2; $x <= 22; $x++) {?>
+        <li data-target="#carousel-example-generic2" data-slide-to="<?php echo $x?>"></li>
+    <?php }?>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox" id="active">
+    <div class="item active" >
+        <img src="/images/Corporativos/imagen1.png">
+     
     </div>
    
-     <?php for ($x = 2; $x <= 24; $x++) {?>
+     <?php for ($x = 2; $x <= 22; $x++) {?>
     <div class="item">
        
-            <img src="/images/data2/images/imagen<?php echo $x?>.jpeg" alt="...">
+            <img src="/images/Corporativos/imagen<?php echo $x?>.png" alt="...">
       <div class="carousel-caption">
         ...
       </div>
@@ -292,8 +304,9 @@
         
 
             <div class ="row"  >
-                <div class="col-md-2"></div>
-                <div class="col-md-8"  >
+                <div class="col-md-3"></div>
+                <div class="col-md-6"  >
+                    </br>
                     <h1><span>¿Por qué contratarnos?<span></h1>
                 </br>
                     <ul>
@@ -306,7 +319,7 @@
                         <li>Te recomendamos a los mejores proveedores </li>
                     </ul>
                 </div>
-                <div class="col-md-2"></div>
+                <div class="col-md-3"></div>
             
         </section>
     </div>

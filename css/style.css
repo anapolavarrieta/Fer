@@ -2,7 +2,7 @@
 
 
 body {
-	font-family: 'Tahoma', sans-serif;
+	font-family: 'Open Sans';
 	font-weight: 400;
 	font-size: 14px;
 	line-height:20px;
@@ -181,7 +181,9 @@ a:visited {
 	font-weight: 400;
 }
 
-
+li{
+	text-align: justify;
+}
 
 
 /* General Slides */ 
@@ -213,7 +215,7 @@ h1 span {
 	/*background:url(../images/main_bg.jpg) repeat;*/
 	/*padding:0 12px;*/
 	color: white;
-	font-weight: bold;
+	
 }
 h3 span.contacto {
 	background:url(../images/main_bg_contacto.jpg) repeat;
@@ -362,6 +364,8 @@ a.first_btn:hover {cursor:pointer;
     ), url(../images/option4.jpg);
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
+	filter: gray;
+	filter: grayscale(1); 
     
     padding-top: 1em;
     padding-bottom: 2em;
@@ -413,7 +417,72 @@ font-size: 150%;
 
 }
 
+#sociales {
+	background-position:center center;
+	background-repeat: repeat;
+	background-attachment: relative;
+	background-size: contain;
+ 	background-clip: content-box;
+	background:url(../images/main_bg.jpg) repeat;
+    height: 100%;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
 
+
+#socialestext{
+	
+	text-align: justify;
+	color:#343434;
+}
+
+#socialeshead{
+	color:#343434;
+}
+
+#sociales p, ul, li{
+	font-size: 90%;
+	text-align: center;
+	list-style-type: none;
+
+}
+
+@media screen and (min-width: 481px) {
+
+#sociales {
+	background-position:center center;
+	background-repeat: repeat;
+	background-attachment: relative;
+ 	background-clip: content-box;
+	background:url(../images/main_bg.jpg) repeat;
+    height: 100%;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+#socialestext {
+font-size: 150%;
+text-align: center;
+
+}
+
+#coorporativos li{
+	font-size: 100%;
+}
+
+}
+
+#coorporativos {
+	background-position:center center;
+	background-repeat: repeat;
+	background-attachment: relative;
+	background-size: contain;
+ 	background-clip: content-box;
+	background:url(../images/main_bg.jpg) repeat;
+    height: 100%;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
 
 
 
@@ -449,9 +518,7 @@ font-size: 150%;
 
 /* ____________________________________ Slide 3 and 4____________________________________ */ 
 
-.sociales-section, .coorporativos-section{
-	padding-top: 5%;
-}
+
 
 /* Makes images fully responsive */
 
@@ -461,8 +528,8 @@ font-size: 150%;
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
   display: block;
-  max-height: 720px;
-  width: 100%;
+  margin: auto;
+  
 }
 
 /* ------------------- Carousel Styling ------------------- */
@@ -472,7 +539,7 @@ font-size: 150%;
 }
 
 .carousel-caption {
-  background-color: rgba(0,0,0,.5);
+  background-color: transparent;
   position: absolute;
   left: 0;
   right: 0;
@@ -514,7 +581,7 @@ font-size: 150%;
 .carousel-content h1{
 	color:white;
 	font-size: 180%;
-	font-weight: bold;
+	
 }
 
 .carousel-content ul{
@@ -576,9 +643,7 @@ h1{
 }
 }
 
-#sociales{
-	background-image: url(../images/main_bg.jpg);
-}
+
 
 
 

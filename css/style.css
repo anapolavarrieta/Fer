@@ -2,38 +2,46 @@
 
 
 body {
-	font-family: 'Open Sans';
+	font-family: 'PT Sans', sans-serif;
 	font-weight: 400;
 	font-size: 14px;
 	line-height:20px;
 	color: white;
 	background-color:#ffffff;
 	overflow-x:hidden;
+	height: 100%;
 	
 }
 
-@media screen and (min-width: 601px) {
+#facebook{
+	text-align: center;
+}
+
+@media screen and (min-width: 601px)  {
 .container{
 	width:100%;
 	height: 100%;
 	padding-left: 0px;
 	padding-right: 0px;
-
+	min-height: 100%;
 
 
 }
 }
+
+
 
 .logo{
 		zoom:80%;
 	}
+
 
 .nav li{
 	float: left;
 	margin:0;
 	padding:0 10px 0 0px;
 	text-transform:uppercase;
-	font-family:'Open Sans';
+	font-family:'Arial Narrow';
 	font-weight:300;
 	font-size:70%;	
 }
@@ -203,10 +211,10 @@ h1 {
 	text-transform:uppercase;
 	text-align:center;
 	/*background:url(../images/h1_bg.png) repeat-x;*/
-	font-family:'Open Sans';
+	font-family:'Arial Narrow';
 	font-size: xx-large;
 	line-height: 86px;
-	color:#343434;
+	color:#93DBDA;
 	font-weight: 300;
 	
 
@@ -214,7 +222,7 @@ h1 {
 h1 span {
 	/*background:url(../images/main_bg.jpg) repeat;*/
 	/*padding:0 12px;*/
-	color: white;
+	color: #93DBDA;
 	
 }
 h3 span.contacto {
@@ -227,7 +235,7 @@ h4 {
 	padding:0 20px;
 	text-transform:none;
 	text-align:center;
-	font-family:'Open Sans';
+	font-family:'Arial Narrow';
 	font-size: 14px;
 	line-height: 26px;
 	color:#3e3e3e;
@@ -237,7 +245,7 @@ h4 {
 h5 {
 	margin:15px 0 6px 0;
 	text-transform:uppercase;
-	font-family:'Open Sans';
+	font-family:'Arial Narrow';
 	font-weight:400;
 	font-size:22px;
 	line-height:26px;
@@ -278,12 +286,12 @@ h5 {
 	font-family:Arial;
 	font-size: 109px;
 	line-height: 102px;
-	color:#343434;
+	color:#93DBDA;
 	font-weight:bold !important;
 	border-bottom:none;
 }
 #slide1 h1 span {
-	color:#fff;
+	color:#93DBDA;
 	border-bottom:none;
 }
 #slide1 h2 {
@@ -317,7 +325,7 @@ a.first_btn:hover {cursor:pointer;
 	padding:17px 0;
 	width:205px;
 	height:23px;
-	font-family:'Open Sans';
+	font-family:'Arial Narrow';
 	font-weight:600;
 	font-size:18px;
 	line-height:20px;
@@ -362,13 +370,13 @@ a.first_btn:hover {cursor:pointer;
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ), url(../images/option4.jpg);
-	-webkit-filter: grayscale(100%);
+	/*-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
 	filter: gray;
-	filter: grayscale(1); 
+	filter: grayscale(1); */
     
     padding-top: 1em;
-    padding-bottom: 2em;
+    
 }
 
 
@@ -404,11 +412,11 @@ a.first_btn:hover {cursor:pointer;
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ), url(../images/option4.jpg);
-	-webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
+	/*-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);*/
     height: 100%;
     padding-top: 1em;
-    padding-bottom: 2em;
+    
 }
 
 #about p {
@@ -417,59 +425,89 @@ font-size: 150%;
 
 }
 
+#centrar{
+	height: 7.5em;
+}
+
+
 #sociales {
 	background-position:center center;
 	background-repeat: repeat;
 	background-attachment: relative;
-	background-size: contain;
  	background-clip: content-box;
-	background:url(../images/main_bg.jpg) repeat;
-    height: 100%;
-    padding-top: 1em;
-    padding-bottom: 2em;
+	/*background:url(../images/main_bg.jpg) repeat;*/
+/* background-color: #343434;*/
+    padding-bottom: 1em;
+    
 }
 
 
 #socialestext{
 	
 	text-align: justify;
-	color:#343434;
+	color: gray;
+background-color: #343434;
+padding-left: 1em;
+
 }
 
 #socialeshead{
-	color:#343434;
+	color:#93DBDA;
 }
 
 #sociales p, ul, li{
-	font-size: 90%;
-	text-align: center;
-	list-style-type: none;
+	font-size: 120%;
+	text-align: justify;
+	/*list-style-type: none;*/
 
 }
 
 @media screen and (min-width: 481px) {
 
+#centrar{
+	height: 7.5em;
+}
 #sociales {
 	background-position:center center;
 	background-repeat: repeat;
 	background-attachment: relative;
  	background-clip: content-box;
-	background:url(../images/main_bg.jpg) repeat;
-    height: 100%;
-    padding-top: 1em;
-    padding-bottom: 2em;
+/*		background:url(../images/main_bg.jpg) repeat;
+ background-color: #343434;*/
+    padding-bottom: 0;
+  
+    
 }
 
 #socialestext {
-font-size: 150%;
-text-align: center;
+font-size: 170%;
+text-align: justify;
+color: gray;
+background-color: #343434;
+padding-left: 1em;
+}
+
+#sociales p, ul, li{
+	font-size: 100%;
+	text-align: justify;
+	/*list-style-type: none;*/
 
 }
+}
+
 
 #coorporativos li{
 	font-size: 100%;
 }
 
+#coorporativos ul{
+	padding-left: 1em;
+}
+
+
+
+
+}
 }
 
 #coorporativos {
@@ -479,9 +517,7 @@ text-align: center;
 	background-size: contain;
  	background-clip: content-box;
 	background:url(../images/main_bg.jpg) repeat;
-    height: 100%;
-    padding-top: 1em;
-    padding-bottom: 2em;
+    padding-bottom: 0;
 }
 
 
@@ -601,8 +637,8 @@ text-align: center;
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ), url(../images/contratarnos.jpeg);
-    -webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
+    /*-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);*/
     padding-top: 1em;
     padding-bottom: 2em;
 }
@@ -610,6 +646,7 @@ text-align: center;
 @media screen and (max-width: 481px) {
 h1{
 	font-size:150%;
+
 }
 }
 
@@ -629,8 +666,8 @@ h1{
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ), url(../images/contratarnos.jpeg);
-	-webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
+	/*-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);*/
     height: 100%;
     padding-top: 1em;
     padding-bottom: 2em;
@@ -639,7 +676,7 @@ h1{
 
 #contratarnos ul{
 	font-size: 180%;
-	list-style-type: none;	
+/*	list-style-type: none;	*/
 }
 }
 
@@ -712,7 +749,7 @@ h1{
 	border-bottom:1px solid #dedede;
 	border-left:1px solid #dedede;
 	text-align: center;
-	font-family:'Open Sans';
+	font-family:'Arial Narrow';
 	font-weight:300;
 	font-style:italic;
 	font-size:14px;

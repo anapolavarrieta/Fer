@@ -10,6 +10,7 @@
     <link href="/css/Bootstrap/css/scrolling-nav.css" rel="stylesheet">
      <link href="/css/style.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
 
     <!-- jQuery  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
@@ -18,13 +19,14 @@
 	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.12.0/jquery.validate.js"></script>
 	<script src="css/Bootstrap/js/bootstrap.min.js"></script>
 	<script src="js/jTabs.js"></script> 
-
+    
 
 	
 	<!-- Scrolling Nav JavaScript -->
     <script src="/css/Bootstrap/js/jquery.easing.min.js"></script>
     <script src="/css/Bootstrap/js/scrolling-nav.js"></script>
-	
+	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 	
 
     <script type="text/javascript">
@@ -48,7 +50,9 @@
 				});
 				return false;
 			});
-		});		
+		});	
+
+  
 	</script>
 	
 
@@ -115,7 +119,7 @@
 
     <!-- About Section -->
 
-   <div class="container" id="contrast">
+   <div class="container" >
     <section id="about" class="about-section">
        
 
@@ -123,6 +127,7 @@
                
             	<div class="col-md-2"></div>
             	<div class="col-md-8" >
+
             		<h1><span>Quienes somos</span></h1>
             	</br>
             		<p id="contrast">Somos una empresa consolidada con más de 10 años de experiencia apoyando a nuestros clientes en la planeación,
@@ -147,36 +152,43 @@
 </section>
         	 </div>
     
-    
+
 
 
     <!-- Sociales Section -->
     <div class="container">
     <section id="sociales" class="sociales-section">
         
-            
-            <div class="row" id="socialestext">
+           <div class="row" id="centrar" ></div>
+            <div class="row" id="socialestext" >
                 
-                <div class="col-md-2" ></div>
-<div class="col-md-8" >
+                
+<div class="col-md-4" id="divsociales" >
+            
+
+<div  >
                 <h1><span id="socialeshead">Eventos Sociales</span></h1>
+            </br>
 
             <p> Estamos contigo en los momentos que vale la pena festejar </p>
+        </br>
             <p> Sin importar el número de invitados, tu evento para nosotros es el más importante</p>
+            </br>
             <p> Hacemos todo tipo de eventos (Bodas, bautizos, primeras comuniones, fiestas infantiles, graduaciones, etc)</p>
+        </br>
             <p> Empezamos trabajando con clientes, terminamos siendo amigos </p>
    
             
         </div>
     </div>
-         <div class="row" >
-            <div class="col-md-2" ></div>
-        <div class="col-lg-8" >
+
+         
+        <div class="col-md-8" >
             <div id="carousel-example-generic1" class="carousel slide" data-ride="carousel" >
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#carousel-example-generic1" data-slide-to="0" class="active"></li>
-    <?php for ($x = 2; $x <= 27; $x++) {?>
+    <?php for ($x = 2; $x <= 26; $x++) {?>
         <li data-target="#carousel-example-generic1" data-slide-to="<?php echo $x?>"></li>
     <?php }?>
   </ol>
@@ -189,7 +201,7 @@
 </div>
             
    
-     <?php for ($x = 2; $x <= 27; $x++) {?>
+     <?php for ($x = 2; $x <= 26; $x++) {?>
     <div class="item">
        
             <img src="/images/Sociales/imagen<?php echo $x?>.png" alt="...">
@@ -213,24 +225,32 @@
 </div>
 
                 </div>
-        <div class="col-md-2" ></div> 
+       
       
       
     </div>
+ 
 
 
-            </div>
+        
         
     </section>
 </div>
+
+
     <!-- Coorporativos Section -->
     <div class="container">
     <section id="coorporativos" class="coorporativos-section">
-
-        <div class="row" id="socialestext">
+         <div class="row" id="centrar" ></div>
+            <div class="row" id="socialestext" >
                 
-                <div class="col-md-2" ></div>
-<div class="col-md-8" >
+                
+<div class="col-md-4" id="divsociales" >
+            
+
+<div  >
+
+        
                 <h1><span id="socialeshead">Eventos Coorporativos</span></h1>
 
 
@@ -251,9 +271,8 @@
             
         </div>
     </div>
-            <div class="row">
-                <div class="col-lg-2"></div>
-                <div class="col-lg-8" >
+    <div class="col-md-8" >
+           
 
 <div id="carousel-example-generic2" class="carousel slide" data-ride="carousel" >
   <!-- Indicators -->
@@ -302,24 +321,24 @@
     <div class="container" id="contrast">
         <section id="contratarnos" class="contratarnos-section">
         
-
+<div class="row" id="centrar" ></div>
             <div class ="row"  >
-                <div class="col-md-3"></div>
-                <div class="col-md-6"  >
+                <div class="col-md-4"></div>
+                <div class="col-md-4"  >
                     </br>
                     <h1><span>¿Por qué contratarnos?<span></h1>
                 </br>
                     <ul>
                         <li>Abarcamos la logística de todo el evento </li>
-                    </br></br>
+                    </br>
                         <li>Nos encargamos de trabajar con los mejores proveedores </li>
-                    </br></br>
+                    </br>
                         <li>Nos adecuamos a tu presupuesto </li>
-                    </br></br>
+                    </br>
                         <li>Te recomendamos a los mejores proveedores </li>
                     </ul>
                 </div>
-                <div class="col-md-3"></div>
+                <div class="col-md-4"></div>
             
         </section>
     </div>
@@ -368,6 +387,10 @@
             </div>
 
         </br>
+        <div id="facebook">
+            <a target="_blank" href="https://www.facebook.com/Fernanda-Coordinadora-de-Eventos-516594341733376/" ><img src="images/Facebook.png" class="Facebook"></a>
+        </div>
+    </br>
         <p style="color:#FFF; text-align:center; font-size:medium;"> Revillagigedo 18 Depto 910, Colonia Centro, CP. 06050 </p>
 
                 

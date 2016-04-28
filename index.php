@@ -323,22 +323,28 @@
         
 <div class="row" id="centrar" ></div>
             <div class ="row"  >
-                <div class="col-md-4"></div>
-                <div class="col-md-4"  >
+                <div class="col-md-3"></div>
+                <div class="col-md-6" >
                     </br>
                     <h1><span>¿Por qué contratarnos?<span></h1>
                 </br>
                     <ul>
-                        <li>Abarcamos la logística de todo el evento </li>
+                        <li>Porque sabemos lo que tu evento significa, cuidamos todos los detalles </li>
                     </br>
-                        <li>Nos encargamos de trabajar con los mejores proveedores </li>
+                        <li>Trabajamos con los mejores proveedores </li>
                     </br>
-                        <li>Nos adecuamos a tu presupuesto </li>
+                        <li>Vivimos tu evento como si fuera nuestro y así aterrizamos tus ideas para que el evento sea único </li>
                     </br>
-                        <li>Te recomendamos a los mejores proveedores </li>
+                        <li>Desarrollamos  ideas innovadoras y creativas </li>
+                    </br>
+                        <li>Contamos con más de 10 años de experiencia en organización de todo tipo de evento.</li>
+                    </br>
+                        <li>Por medio de nuestra experiencia  garantizamos que tanto  el cliente como los invitados disfruten al máximo</li>
+                    </br>
+                        <li>Nos ajustamos al presupuesto de cada cliente</li>
                     </ul>
                 </div>
-                <div class="col-md-4"></div>
+                <div class="col-md-3"></div>
             
         </section>
     </div>

@@ -188,7 +188,7 @@
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#carousel-example-generic1" data-slide-to="0" class="active"></li>
-    <?php for ($x = 2; $x <= 26; $x++) {?>
+    <?php for ($x = 2; $x <= 29; $x++) {?>
         <li data-target="#carousel-example-generic1" data-slide-to="<?php echo $x?>"></li>
     <?php }?>
   </ol>
@@ -201,7 +201,7 @@
 </div>
             
    
-     <?php for ($x = 2; $x <= 26; $x++) {?>
+     <?php for ($x = 2; $x <= 29; $x++) {?>
     <div class="item">
        
             <img src="/images/Sociales/imagen<?php echo $x?>.png" alt="...">
